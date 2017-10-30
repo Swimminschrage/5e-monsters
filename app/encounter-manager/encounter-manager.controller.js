@@ -5,9 +5,9 @@
 		.module('app')
 		.controller('EncounterManagerController', EncounterManagerController);
 
-	EncounterManagerController.$inject = ['$scope', '$state', 'actionQueue', 'encounter', 'library', 'monsters'];
+	EncounterManagerController.$inject = ['$scope', '$state', 'actionQueue', 'encounter', 'library', 'monsters', 'sheetManager'];
 
-	function EncounterManagerController($scope, $state, actionQueue, encounter, library, monsters) {
+	function EncounterManagerController($scope, $state, actionQueue, encounter, library, monsters, sheetManager) {
 		var vm = this;
 
 		vm.encounter = encounter;
