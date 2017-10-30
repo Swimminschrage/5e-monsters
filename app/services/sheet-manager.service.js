@@ -12,7 +12,7 @@ var remove = ["19ngAA7d1eYKiBtKTsg8Qcsq_zhDSBzEMxXS45eCdd7I"];
 var sheetMetaStorageKey = "5em-sheet-meta";
 var sheetCachePartialKey = "5em-sheet-cache";
 var legacySheetDataKey = "5em-custom-content";
-var logging = false;
+var logging = window.location.href.includes("localhost");
 
 function generateCacheId(sheetId) {
 	return [sheetCachePartialKey, sheetId].join(":");
